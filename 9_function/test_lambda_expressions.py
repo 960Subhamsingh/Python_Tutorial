@@ -1,3 +1,9 @@
+import mysql.connector
+
+conn = mysql.connector.connect(host = 'localhost' , user= 'root' , password = 'tiger')
+
+conn._server_version
+
 """Lambda Expressions
 
 @see: https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions
