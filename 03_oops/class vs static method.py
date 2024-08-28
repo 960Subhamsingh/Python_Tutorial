@@ -34,8 +34,27 @@ class Item:
         
     def __repr__(self) -> str:
         return f"Item('{self.name}', {self.price}, {self.quantity} )"  
+    
+    def __repr__(self):
+        return f"{self.__class__.__name__}('{self.name}', {self.price},{self.quantity})"
+    
+   
+    # Inheritance class 
+    
+
+class phone(Item):
+    def __init__(self, name: str, price: float, quantity=0, broken_phones=0):
+        # Call to super function  have access the all attribute / Method 
+        super().__init__(name, price, quantity)
+
+        # the received arguments
+        assert broken_phones >= 0, f"Broken Phones {broken_phones} is not greater or equal to zero!"
+        
+        # Assign to self object 
+        self.broken_phones = broken_phones
 
 
+phone1 = phone("Apple", 12000,5,1)
 
 item1 = Item("Phone", 100, 1)
 item2 = Item("Laptop", 1000, 3)
