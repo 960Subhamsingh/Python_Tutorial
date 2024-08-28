@@ -1,19 +1,3 @@
-class A:
-    def __init__(self, value=0):
-        self.a = value
-    def __repr__(self) -> str:
-        return f'<A({self.value})>'
-    def __add__(self, b):
-        return self.a + b
-     
-    def __sub__(self, c):
-        return self.a - c
-
-a = A()
-print(a + 6215 + 2342)
-print(12344-546)
-
-
 class Item:
     pay_rate = 0.5 # The pay rate after 20% discount
     all=[]
@@ -34,14 +18,29 @@ class Item:
         return self.price * self.quantity
     def discount(self):
         self.price = self.price * self.pay_rate
+    
+    @staticmethod
+    def is_integer(num):
+        # We will count out the floats that are point zero
+        # For i.e: 5.0, 10.0
+        if isinstance(num, float):
+            # Count out the floats that are point zero
+            return num.is_integer()
+        elif isinstance(num, int):
+            return True
+        else:
+            return False
+
+        
     def __repr__(self) -> str:
         return f"Item('{self.name}', {self.price}, {self.quantity} )"  
+
+
 
 item1 = Item("Phone", 100, 1)
 item2 = Item("Laptop", 1000, 3)
 item3 = Item("Cable", 10, 5)
 item4 = Item("Mouse", 50, 5)
 item5 = Item("Keyboard", 75, 5)
-
 
 print(Item.all)
