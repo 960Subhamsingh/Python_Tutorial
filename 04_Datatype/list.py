@@ -9,3 +9,11 @@ print(len(my_list))  # Finding the length of the list
 my_list.append("Hii")  # Appending a value to this list - can be any type!
 print(my_list)
 
+list = ['India', 'USA', 'Canada']
+print(len(list))
+list.append(['France', 'Spain'])
+print(list)
+print(len(list))
+list.extend(['France', 'Spain'])
+print(list)
+

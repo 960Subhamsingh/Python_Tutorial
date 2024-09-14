@@ -47,4 +47,5 @@ a = list(s_even_num)
 print(a)
 
 
-   
+new_tup = tuple(filter(lambda x:(x%3==0), number))
+print(new_tup)
