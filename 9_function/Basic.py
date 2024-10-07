@@ -32,4 +32,6 @@ def pythagorean_triple(a, b, c):
 
 print(pythagorean_triple(2,3,4))     # This is True
 print(pythagorean_triple(3, 4, 5))   # This is True
-print(pythagorean_triple(3, 9, 15))  # This is False
+print(pythagorean_triple(3, 9, 15))  # This is 
+
+
