@@ -26,3 +26,15 @@ print(lucky_number_3)
 # isLuckyNumber? = "Variables with special characters"
 # $myName = "Variables starting with special characters"
 # lucky number = "Variables with spaces"
+
+
+# special syntax
+a = 5;b=6;c=7
+print(a)
+print(b)
+print(c)
+
+a,b,c = 4,5,6
+print(a)
+print(b)
+print(c)
