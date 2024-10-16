@@ -19,14 +19,42 @@ the structure you define in the class.'''
 list, tuple, dictionary, queue, etc. Just need a behavior? Then just create a function
 that transforms your data.'''
 
+### A class in python is the blueprint or template  from which specific objects are created.
+"""class Class_Name:
+   Statements"""
+   
+### object-name = class-name.(arguments)   
+
+"""
+Some Basic terms for class
+
+1. Class variable  (Attributes) :- class variable is a variable that
+ is shared by all the different  objects/instances of a class.
+
+2. Instance/Object  variables :- Instance/Object  variables are 
+variables which are unique to each instance. It is defined inside a
+ method and belongs only to the current instance of a class. Basically  an objects is everything we can see around. for example - A person is an object of Human class.
+
+3. Methods (Behaviour) :- Methods are also called as functions which
+ are defined in a class and describes the behaviour of an object.
+
+"""
 
 class Person:
+    """
+    The __init__() function is called automatically every 
+    time the class is being used to create a new object
+    """
     def __init__(self, first_name: str , last_name: str, age: int , gender: chr ) -> None:
         '''initializes an instance of class'''
+        """self is kind of By-default parameter , If we have a method which takes no arguments, 
+        then we still have to have one argument."""
         self.first_name = first_name
         self.last_name = last_name
         self.age = age
         self.gender = gender
+    def my(self):
+        print("Hello my name is " + self.first_name + " and my age is " + str(self.age))
     def __repr__(self) -> str:
         '''repetaion of class'''
         return "<class 'person'>"
@@ -53,3 +81,4 @@ print(f"p2 is located at memory address: {hex(id(p2))}")
 
 print(p1.__str__())
 p1.holiday()
+p1.my()

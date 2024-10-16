@@ -11,6 +11,7 @@ elif(age>18 and planet == "earth"):
 
 planet = "march"
 
+#  Age is less then 18
 if age < 18 and planet == "earth":
     # Evaluation - True and False => False
     print("You are NOT eligible for a license on Earth ")
