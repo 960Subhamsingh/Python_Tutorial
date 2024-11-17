@@ -1,6 +1,6 @@
 
 #  some requirments for the opening of accounts
-
+'''
 1. account holder name 
 2. ifsc code
 3. cif number 
@@ -10,7 +10,7 @@
 7. balance
 
 transaction 
-deposit
+deposit'''
 
 class Banking:
     Intrastrate= 0.06

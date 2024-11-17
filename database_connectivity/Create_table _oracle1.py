@@ -25,3 +25,21 @@ finally:
         cursor.close()
     if con:
         con.close()
+
+
+## second method
+
+def create_usertable():
+    cursor.execute('CREATE TABLE  userstable(username TEXT,password TEXT)')
+
+
+def add_userdata(username,password):
+	cursor.execute('INSERT INTO userstable(username,password) VALUES (?,?)',(username,password))
+	conn.commit()
+
+def login_user(username,password):
+	cursor.execute('SELECT * FROM userstable WHERE username =? AND password = ?',(username,password))
+	data = cursor.fetchall()
+	return data
+
+    
