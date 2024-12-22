@@ -1,4 +1,4 @@
-# Learn Python - Python Tutorial [Full Course for Beginners]
+# Learn Python - Python Tutorial
  
 
 ## Python Scripts 
