@@ -24,10 +24,10 @@ luckyNumber4 = "Looks it has a number!"
 lucky_number_3 = "I too got a number"
 
 # Dynamic Typing (PHP)
-$a = 5;
+# $a = 5;
 
 # Static Typing (Java)
-int a = 5;
+# int a = 5;
 
 # Dynamic Binding Example
 a = 5          # Assign integer
@@ -37,7 +37,7 @@ a = 'nitish'   # Reassign string
 print(a)
 
 # Static Binding Example
-int a = 5
+# int a  = 5
 
 print(styleCamelCase)
 print(StylePascalCase)

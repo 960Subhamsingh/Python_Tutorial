@@ -1,4 +1,4 @@
-# 2. Sequence Sum
+2# 2. Sequence Sum
 
 # Formula: 1/1! + 2/2! + 3/3! + ...
 
