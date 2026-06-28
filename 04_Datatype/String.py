@@ -1,5 +1,7 @@
 # string are the store  of sequance  of character 
 
+# String (str): A string represents a series of characters. In Python, anything inside quotes (single quotes or double-quotes) is a string.
+
 # creating string
 
 name  = "Hello"
